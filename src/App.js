@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import NavBar from './Components/navBar/NavBar'
+import Search from './Components/search/Search'
 import './App.css';
 
 class App extends Component {
   render() {
 
     return (
-      <div className="App">
+      <MuiThemeProvider>
+        <div>
+          <NavBar />
+          <Search />
+        </div>
+      </MuiThemeProvider>
 
-      </div>
     );
   }
 }
